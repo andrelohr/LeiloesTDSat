@@ -100,7 +100,6 @@ public class ProdutosDAO {
     }
     
     public ArrayList<ProdutosDTO> listarProdutosVendidos() {
-        //String sql = "SELECT * FROM produtos WHERE status = 'Vendido'";
         String sql = "SELECT * FROM produtos WHERE status = ?";
         conn = new conectaDAO().connectDB();
 
